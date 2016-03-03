@@ -1,0 +1,9 @@
+<h1 > <%= @bean.name %> </h1>
+
+<p class="sub">This coffee is a <%= @bean.roast %> and it's from <%= @bean.origin %></p>
+
+<%= link_to "Set Phasers to Stun", bean_path, method: :delete,
+ data: { confirm: "Are we going in, Captain Kirk?"} %>
+
+
+<%= link_to "Back to reality, woop there goes Gravity", beans_path, class: "pink" %>

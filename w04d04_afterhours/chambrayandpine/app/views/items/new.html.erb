@@ -1,0 +1,29 @@
+<h1>A Challenger Has Arrived</h1>
+
+<%= form_for @item do |i| %>
+
+  <div>
+    <%= i.label :name %>
+    <%= i.text_field :name %>
+  </div>
+
+  <div>
+    <%= i.label :price %>
+    <%= i.text_field :name %>
+  </div>
+
+  <div>
+    <%= i.label :quantity %>
+    <%= i.text_field :quantity %>
+  </div>
+
+  <div>
+    <%= i.label :img %>
+    <%= i.text_field :img %>
+  </div>
+
+  <%= i.submit "CONFIRM HYPE" %>
+
+<% end %>
+
+<%= link_to "UNPLUG FROM THE MATRIX", items_path %>

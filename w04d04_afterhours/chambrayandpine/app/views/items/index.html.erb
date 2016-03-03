@@ -1,0 +1,16 @@
+<h1>Fresh Off The Boat</h1>
+
+<div>
+  <% @items.each do |item| %>
+    <div>
+      <strong> <%= item.name %> </strong> - <%= item.price %> - <%= item.quantity %>
+    </div>
+  <% end %>
+</div>
+<div>
+  <% @items.each do |item| %>
+    <div>
+      <img src= <%= item.img %>>
+    </div>
+  <% end %>
+</div>

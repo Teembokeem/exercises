@@ -1,0 +1,10 @@
+<h1> <%= @item.name %> </h1>
+
+<p><%= @item.name %> was made locally in a log cabin, and read 19th century french poetry to, so that you'll always look fly as shit</p>
+<img src = <%= @item.img %>>
+
+<%= link_to "Set Phasers to Stun", item_path, method: :delete,
+ data: { confirm: "Are we going in, Captain Kirk?"} %>
+
+
+<%= link_to "MORE HYPE", items_path %>

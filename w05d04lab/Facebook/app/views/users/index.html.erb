@@ -1,0 +1,22 @@
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>email</th>
+      <th colspan="6"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= user.email %></td>
+        <% if current_user && current_user.id != user.id %>
+        <td><%= link_to "who cares about this dude", user_path(users), method: :delete, data: {confirm: "fasho"} %></td>
+        <% end %>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

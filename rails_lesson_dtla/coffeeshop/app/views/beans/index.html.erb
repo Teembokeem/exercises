@@ -1,0 +1,7 @@
+<h1>Hipster Imported Beans</h1>
+
+<ul class="sub">
+ <% @beans.each do |bean| %>
+  <li><strong> <%= bean.name %> </strong> - <%= bean.roast %></li>
+ <% end %>
+</ul>

@@ -1,0 +1,30 @@
+<h1>Switchup</h1>
+
+<%= form_for @item do |f| %>
+
+  <div class="sub">
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </div>
+
+  <div class="sub">
+    <%= f.label :roast %>
+    <%= f.text_field :roast %>
+  </div>
+
+  <div class="sub">
+    <%= f.label :origin %>
+    <%= f.text_field :origin %>
+  </div>
+
+  <div class="sub">
+    <%= f.label :quantity %>
+    <%= f.text_field :quantity %>
+  </div>
+
+
+  <%= f.submit "The One You're Looking For" %>
+
+<% end %>
+
+<%= link_to "HeadBack", item_path %>
